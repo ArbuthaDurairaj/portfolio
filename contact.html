@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HTML Comments -->
+    <!-- Name: Arbutha Durairaj -->
+    <!-- File Name: contact.html -->
+    <!-- Date: 2024-10-17-->
+    <!-- Description: This page provides contact information . -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact information">
+    <meta name="Keywords" content="user-info,contact">
+    <meta name="author" content="Arbutha Durairaj">
+    <!-- link to css style sheet index.css and form.css-->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+     <!-- Title page -->
+    <title>contact form</title>
+</head>
+<body>
+        <header>
+              <!-- Level-one heading for the heading contact form-->
+        <h1> Contact Form</h1>
+     <!-- Navigation section -->
+
+   <nav>
+    <ul class="nav_links">
+       <!-- Hyperlink to index.html,resume.html,projects.html-->
+         <li><a href="index.html">Introduction</a></li>
+        <li><a href="resume.html">Resume </a></li>
+        <li><a href="projects.html">Projects</a></li>
+        
+        </ul>
+    </nav>
+    </header>
+      <!-- main Section-->
+    <main class="form">
+    <form action="contactForm.php" method="post" enctype="text/plain">
+       
+        <fieldset>
+            
+             <!-- User Info Section-->
+           <legend>User-info</legend>
+           
+           <div class="container"> 
+    <div class="form-section">
+    <label for="firstName">First Name </label>
+   <input type="text" name="Name" id="firstName" placeholder="FirstName" required >
+</div>
+<div class="form-section">
+    
+    <label for="lastName">Last Name </label>
+    <input type="text" name="Name" id="lastName" placeholder="LastName" required >
+</div>
+        <div class="form-section">
+          
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" size="30" placeholder="format for email is xxx@yyy.zzz" required>
+</div></div>
+</fieldset>
+ 
+<fieldset>
+    <!-- Contact Section -->
+     <legend>Contact</legend>
+
+        <div class="form-section">
+          
+    <label for="subject">Subject</label>
+    <input type="text" name="subject" id="subject" minlength="3" maxlength="20">
+</div>
+
+        <div class="form-section">
+           
+    <label for="message">Write your message here</label>
+    <textarea name="message" id="message"  minlength="10" maxlength="80" rows="5" cols="50"></textarea>
+        </div>
+        
+</fieldset>
+
+ <!--Creating buttons for submit and reset information-->
+
+<input type="submit">
+<input type="reset">
+</form>
+
+</main>
+<!--Copyright section-->
+<footer>
+    <p> &copy; 2024 Arbutha Durairaj. All rights reserved.</p>
+</footer>
+    
+    
+</body>
+</html>

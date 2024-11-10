@@ -1,0 +1,81 @@
+
+ /*Arbutha Durairaj*/
+ /* Centering the form */
+ form{
+   
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+   
+   width:50%;
+   margin:auto;
+   padding: 20px;
+   
+  }
+  /* Form fields and textarea adjustments */
+input[type="text"],input[type="email"],textarea {
+    width: 100%; /* Ensure full width for inputs */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Include padding and border in element's width */
+    margin-bottom: 10px; /* Add space between fields */ 
+}
+
+
+/* Flexbox for form layout */
+.form-section {
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap; /* Ensure it wraps properly in narrow spaces */
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  label{
+    flex-basis: 30%; /* Set a consistent width for labels */
+    text-align: right;
+    margin-right: 10px;
+
+  }
+  input[type="text"],input[type="email"] ,textarea {
+    flex-basis: 65%; /* Set consistent width for input and textarea */
+}
+  fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%; /* Ensure the fieldset takes up the full width of the container */
+}
+
+
+
+legend {
+    font-weight: bold;
+}
+  
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%; /* Full width for mobile */
+      }
+     label{
+        text-align: left;
+        margin-bottom: 5px;
+        flex-basis:100% ;
+      }
+    
+      input[type="text"],input[type="email"],textarea {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+      }
+    
+     
+    }
